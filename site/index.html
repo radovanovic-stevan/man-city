@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Man City Stats</title>
+  <meta name="description" content="Manchester City results, line-ups, goals, player stats and records since the first Premier League season, 1992-93.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%231c2c5b'/%3E%3Ccircle cx='10' cy='10' r='6.5' fill='%236cabdd'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true"></span>Man City Stats</a>
+      <nav class="nav" id="nav">
+        <a href="#/" data-v="home">Overview</a>
+        <a href="#/season" data-v="season">Seasons</a>
+        <a href="#/players" data-v="players">Players</a>
+        <a href="#/records" data-v="records">Records</a>
+        <a href="#/managers" data-v="managers">Managers</a>
+        <a href="#/opponents" data-v="opponents">Opponents</a>
+      </nav>
+      <button class="menu-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <button class="theme-btn" id="theme" title="Toggle light / dark" aria-label="Toggle light or dark theme">◐</button>
+    </div>
+  </header>
+  <main id="main"><div class="loading">Loading</div></main>
+  <footer>
+    Data: <a href="https://www.transfermarkt.com/manchester-city/startseite/verein/281" target="_blank" rel="noopener">Transfermarkt</a>
+    (results, line-ups, goals, cards, league tables and player profiles). Last updated <span id="built"></span>.
+    Unofficial, not affiliated with Manchester City FC.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
